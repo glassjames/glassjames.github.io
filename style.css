@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-size: 28px;
+}
+
+.header {
+  background-color: #ffcbba;
+  padding: 30px;
+  text-align: center;
+  font-family: monospace;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #fff392;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #383838;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: monospace;
+}
+
+#navbar a:hover {
+  background-color: #ffdba2;
+  color: #383838;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagecontent {
+  padding: 16px;
+}
+
+.stickynav {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.stickynav + .pagecontent {
+  padding-top: 60px;
+}
