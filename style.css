@@ -10,6 +10,32 @@ body {
   font-family: monospace;
 }
 
+.social {
+  overflow: hidden;
+  background-color: #fff392;
+}
+
+.social a {
+  float: right;
+  display: block;
+  color: #383838;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: monospace;
+}
+
+.social a:hover {
+  background-color: #ffdba2;
+  color: #383838;
+}
+
+.social a.active {
+  background-color: #ffdba2;
+  color: #383838;
+}
+
 #navbar {
   overflow: hidden;
   background-color: #fff392;
@@ -32,8 +58,8 @@ body {
 }
 
 #navbar a.active {
-  background-color: #4CAF50;
-  color: white;
+  background-color: #ffdba2;
+  color: #383838;
 }
 
 .pagecontent {
