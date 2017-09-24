@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-size: 28px;
+  background-color: #424444;
 }
 
 .header {
@@ -10,60 +10,43 @@ body {
   font-family: monospace;
 }
 
-.social {
-  overflow: hidden;
-  background-color: #fff392;
-}
-
-.social a {
-  float: right;
-  display: block;
-  color: #383838;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 15px;
-  font-family: monospace;
-}
-
-.social a:hover {
-  background-color: #ffdba2;
-  color: #383838;
-}
-
-.social a.active {
-  background-color: #ffdba2;
-  color: #383838;
-}
-
 #navbar {
   overflow: hidden;
-  background-color: #fff392;
+  background-color: #2C2D2D;
 }
 
 #navbar a {
-  float: left;
+  float: right;
   display: block;
-  color: #383838;
+  color: #FFFFFF;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 20px;
-  font-family: monospace;
+  font-family: Roboto;
+  font-weight: bold;
+}
+
+#navbar a.current {
+  font-weight: 700;
+  background-color: #FC9870;
+  color: #FFFFFF;
 }
 
 #navbar a:hover {
-  background-color: #ffdba2;
-  color: #383838;
+  background-color: #FCAF70;
+  color: #FFFFFF;
 }
 
 #navbar a.active {
-  background-color: #ffdba2;
-  color: #383838;
+  background-color: #FC9870;
+  color: #FFFFFF;
 }
 
 .pagecontent {
   padding: 16px;
+  font-family: Roboto;
+  font-weight: 300;
 }
 
 .stickynav {
@@ -74,4 +57,27 @@ body {
 
 .stickynav + .pagecontent {
   padding-top: 60px;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto-Thin.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto-Black.ttf");
+    font-weight: 700;
 }
