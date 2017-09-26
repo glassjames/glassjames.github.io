@@ -1,18 +1,17 @@
 body {
   margin: 0;
-  background-color: #424444;
+  background-color: #2C2D2D;
 }
 
 .header {
-  background-color: #ffcbba;
-  padding: 30px;
+  padding: 5px;
   text-align: center;
-  font-family: monospace;
+  background-color: #F8555A;
 }
 
 #navbar {
   overflow: hidden;
-  background-color: #2C2D2D;
+  background-color: #252626;
 }
 
 #navbar a {
@@ -27,14 +26,26 @@ body {
   font-weight: bold;
 }
 
+#navbar a {
+  text-align: right;
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: bold;
+}
+
 #navbar a.current {
   font-weight: 700;
-  background-color: #FC9870;
+  background-color: #424444;
   color: #FFFFFF;
 }
 
 #navbar a:hover {
-  background-color: #FCAF70;
+  background-color: #F8555A;
   color: #FFFFFF;
 }
 
@@ -44,7 +55,9 @@ body {
 }
 
 .pagecontent {
-  padding: 16px;
+  padding: 12px;
+  padding-left: 30px;
+  padding-right: 30px;
   font-family: Roboto;
   font-weight: 300;
 }
@@ -56,28 +69,64 @@ body {
 }
 
 .stickynav + .pagecontent {
-  padding-top: 60px;
+  padding-top: 65px;
 }
 
-@font-face {
-    font-family: "Roboto";
-    src: url("fonts/Roboto-Regular.ttf");
+u {
+  text-decoration: none;
+  border-bottom: 5px solid #F8555A;
 }
 
-@font-face {
-    font-family: "Roboto";
-    src: url("fonts/Roboto-Bold.ttf");
-    font-weight: bold;
+* {
+  box-sizing: border-box;
 }
 
-@font-face {
-    font-family: "Roboto";
-    src: url("fonts/Roboto-Thin.ttf");
-    font-weight: 300;
+/* GRID */
+
+.grid {
+  background: #DDD;
+  max-width: 100%;
 }
 
-@font-face {
-    font-family: "Roboto";
-    src: url("fonts/Roboto-Black.ttf");
-    font-weight: 700;
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ITEMS */
+
+.tile {
+  float: left;
+  width: calc(100% / 4);
+  height: 200px;
+  background: #2C2D2D;
+  border: 2px solid hsla(0, 0%, 0%, 0.5);
+}
+
+.tile-w2 {
+  width: calc(100% / 2);
+}
+
+.tile-h2 {
+  height: 400px;
+}
+
+.tile:hover {
+  border-color: hsla(0, 0%, 100%, 0.5);
+  cursor: move;
+}
+
+.tile.is-dragging,
+.tile.is-positioning-post-drag {
+  background: #C90;
+  z-index: 2;
+}
+
+.packery-drop-placeholder {
+  outline: 3px dashed hsla(0, 0%, 0%, 0.5);
+  outline-offset: -6px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
 }
