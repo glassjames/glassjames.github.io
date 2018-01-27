@@ -1,10 +1,59 @@
 body {
   margin: 0;
-  /*background-color: #2C2D2D !important;*/
+  background-color: #1B1C22 !important;
+}
+
+#home {
+  margin: auto;
+  margin-top: 9%;
+  width: 90%;
+  height: 1080px;
+  /*border: 3px solid green;*/
+  padding: 10px;
 }
 
 .name {
   font-size: 227pt;
   font-family: "niveau-grotesk";
   font-weight: 700;
+  color: #FFFFFF !important;
+  /*border: 3px solid blue;*/
+  text-align: center;
+}
+
+.links {
+  font-size: 39pt;
+  font-family: "niveau-grotesk";
+  font-weight: 700;
+}
+
+#about {
+  color: #33C55A;
+  /*text-decoration: underline;
+  text-decoration-color: #FFFFFF;*/
+  padding-right:30px !important;
+}
+
+#work {
+  color: #1476E3;
+  /*text-decoration: underline;
+  text-decoration-color: #FFFFFF;*/
+  padding-left:30px !important;
+  padding-right:30px !important;
+}
+
+#resume {
+  color: #DD155D;
+  /*text-decoration: underline;
+  text-decoration-color: #FFFFFF;*/
+  padding-left:30px !important;
+  padding-right:30px !important;
+}
+
+#contact {
+  color: #F4D46C;
+  /*text-decoration: underline;
+  text-decoration-color: #FFFFFF;*/
+  padding-left:30px !important;
+  padding-right:30px !important;
 }
