@@ -6,4 +6,5 @@ body {
 .name {
   font-size: 227pt;
   font-family: "niveau-grotesk";
+  font-weight: bold;
 }
