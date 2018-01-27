@@ -3,15 +3,6 @@ body {
   background-color: #1B1C22 !important;
 }
 
-#home {
-  margin: auto;
-  margin-top: 9%;
-  width: 90%;
-  height: 1080px;
-  /*border: 3px solid green;*/
-  padding: 10px;
-}
-
 .name {
   font-size: 227pt;
   font-family: "niveau-grotesk";
@@ -27,14 +18,14 @@ body {
   font-weight: 700;
 }
 
-#about {
+#about-link {
   color: #33C55A;
   /*text-decoration: underline;
   text-decoration-color: #FFFFFF;*/
   padding-right:30px !important;
 }
 
-#work {
+#work-link {
   color: #1476E3;
   /*text-decoration: underline;
   text-decoration-color: #FFFFFF;*/
@@ -42,7 +33,7 @@ body {
   padding-right:30px !important;
 }
 
-#resume {
+#resume-link {
   color: #DD155D;
   /*text-decoration: underline;
   text-decoration-color: #FFFFFF;*/
@@ -50,10 +41,18 @@ body {
   padding-right:30px !important;
 }
 
-#contact {
+#contact-link {
   color: #F4D46C;
   /*text-decoration: underline;
   text-decoration-color: #FFFFFF;*/
   padding-left:30px !important;
   padding-right:30px !important;
+}
+
+#green-rule {
+  border-style: solid;
+  border-color: #33C55A;
+  border-width: 46px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
