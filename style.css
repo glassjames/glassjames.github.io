@@ -1,15 +1,24 @@
 body {
   margin: 0;
+  padding: 0;
   background-color: #1B1C22 !important;
 }
 
-h1 {
+h3 {
   font-size: 227pt !important;
   font-family: "niveau-grotesk" !important;
   font-weight: 700 !important;
-  color: #FFFFFF !important;
   /*border: 3px solid blue;*/
   text-align: center;
+  transition: color .5s !important;
+}
+
+#name-plate {
+  text-align: center;
+}
+
+a {
+  transition: color .5s;
 }
 
 .links {
@@ -20,32 +29,28 @@ h1 {
 
 #about-link {
   color: #33C55A;
-  /*text-decoration: underline;
-  text-decoration-color: #FFFFFF;*/
+  text-decoration: none;
   padding-left:100px !important;
   padding-right:30px !important;
 }
 
 #work-link {
   color: #1476E3;
-  /*text-decoration: underline;
-  text-decoration-color: #FFFFFF;*/
+  text-decoration: none;
   padding-left:30px !important;
   padding-right:30px !important;
 }
 
 #resume-link {
   color: #DD155D;
-  /*text-decoration: underline;
-  text-decoration-color: #FFFFFF;*/
+  text-decoration: none;
   padding-left:30px !important;
   padding-right:30px !important;
 }
 
 #contact-link {
   color: #F4D46C;
-  /*text-decoration: underline;
-  text-decoration-color: #FFFFFF;*/
+  text-decoration: none;
   padding-left:30px !important;
   padding-right:30px !important;
 }
@@ -63,6 +68,12 @@ h2 {
   font-family: "niveau-grotesk" !important;
   font-weight: 700 !important;
   text-align: center !important;
+}
+
+.aboutme {
+  text-align: left;
+  color: #FFFFFF;
+  font-family: "niveau-grotesk" !important;
 }
 
 #about-header {
