@@ -13,6 +13,11 @@ h3 {
   transition: color .5s !important;
 }
 
+p {
+  font-family: "niveau-grotesk" !important;
+  font-size: 23pt;
+}
+
 #name-plate {
   text-align: center;
 }
@@ -90,4 +95,64 @@ h2 {
 
 #contact-header {
   color: #F4D46C;
+}
+
+/* GRID */
+
+.grid {
+  /*background: #2C2D2D; /*#DDD*/
+  max-width: 100%;
+  position: fixed;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  margin-top: 25px;
+  clear: both;
+}
+
+/* ITEMS */
+
+.tile {
+  float: left;
+  width: calc(100% / 4);
+  height: 266.66px;
+  text-align: center;
+  /*background: #234526;
+  border: 2px solid hsla(0, 0%, 0%, 0.5);*/
+  display: block;
+}
+
+.tile-w2 {
+  width: calc(100% / 2);
+}
+
+.tile-h2 {
+  height: 800px;
+}
+
+.tile-h2-3 {
+  height: 533.33px;
+}
+
+.tile:hover {
+  /*background-image: url('');*/
+  /*background-color: #424444;*/
+  border-color: hsla(0, 0%, 100%, 0.5);
+  cursor: default;
+}
+
+.pagecontent {
+  padding-left: 30px;
+  padding-right: 30px;
+  /*background: pink;*/
+  margin-top: -25px;
+  height: 800px;
+}
+
+.propic {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
