@@ -5,7 +5,7 @@ body {
 }
 
 h3 {
-  font-size: 227pt !important;
+  font-size: 15vw !important;
   font-family: "niveau-grotesk" !important;
   font-weight: 700 !important;
   /*border: 3px solid blue;*/
@@ -15,7 +15,8 @@ h3 {
 
 p {
   font-family: "niveau-grotesk" !important;
-  font-size: 23pt;
+  font-size: 2vw;
+  position:relative;
 }
 
 #name-plate {
@@ -27,37 +28,37 @@ a {
 }
 
 .links {
-  font-size: 39pt;
+  font-size: 4vw;
   font-family: "niveau-grotesk";
   font-weight: 700;
+  text-align: center;
 }
 
 #about-link {
   color: #33C55A;
   text-decoration: none;
-  padding-left:100px !important;
-  padding-right:30px !important;
+  padding-right: 1vw !important;
 }
 
 #work-link {
   color: #1476E3;
   text-decoration: none;
-  padding-left:30px !important;
-  padding-right:30px !important;
+  padding-left: 1vw !important;
+  padding-right: 1vw !important;
 }
 
 #resume-link {
   color: #DD155D;
   text-decoration: none;
-  padding-left:30px !important;
-  padding-right:30px !important;
+  padding-left: 1vw !important;
+  padding-right: 1vw !important;
 }
 
 #contact-link {
   color: #F4D46C;
   text-decoration: none;
-  padding-left:30px !important;
-  padding-right:30px !important;
+  padding-left: 1vw !important;
+  padding-right: 1vw !important;
 }
 
 #green-rule {
@@ -69,10 +70,9 @@ a {
 }
 
 h2 {
-  font-size: 165pt !important;
+  font-size: 12vw !important;
   font-family: "niveau-grotesk" !important;
   font-weight: 700 !important;
-  text-align: center !important;
 }
 
 .aboutme {
@@ -81,7 +81,16 @@ h2 {
   font-family: "niveau-grotesk" !important;
 }
 
+.about_h {
+  text-align: left;
+  /*border-style: solid;
+  border-color: green !important;
+  border-width: 10px !important;*/
+  float: left;
+}
+
 #about-header {
+  margin-left: 50px;
   color: #33C55A;
 }
 
@@ -97,53 +106,6 @@ h2 {
   color: #F4D46C;
 }
 
-/* GRID */
-
-.grid {
-  /*background: #2C2D2D; /*#DDD*/
-  max-width: 100%;
-  position: fixed;
-}
-
-/* clear fix */
-.grid:after {
-  content: '';
-  display: block;
-  margin-top: 25px;
-  clear: both;
-}
-
-/* ITEMS */
-
-.tile {
-  float: left;
-  width: calc(100% / 4);
-  height: 266.66px;
-  text-align: center;
-  /*background: #234526;
-  border: 2px solid hsla(0, 0%, 0%, 0.5);*/
-  display: block;
-}
-
-.tile-w2 {
-  width: calc(100% / 2);
-}
-
-.tile-h2 {
-  height: 800px;
-}
-
-.tile-h2-3 {
-  height: 533.33px;
-}
-
-.tile:hover {
-  /*background-image: url('');*/
-  /*background-color: #424444;*/
-  border-color: hsla(0, 0%, 100%, 0.5);
-  cursor: default;
-}
-
 .pagecontent {
   padding-left: 30px;
   padding-right: 30px;
@@ -153,6 +115,13 @@ h2 {
 }
 
 .propic {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  height: 40vw;
+  width: 40vw;
+  margin: 50px;
+  float: right !important;
+}
+
+.info {
+  clear: left;
+  margin: 50px;
 }

@@ -42,12 +42,5 @@ $(document).ready(function() {
         }, function(){
         $(this).css("color", "#F4D46C");
   });
+  $.fn.fullpage.reBuild();
 });
-
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
-
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
