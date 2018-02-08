@@ -1,15 +1,17 @@
-<!DOCTYPE html "glassguy.github.io">
+<!DOCTYPE html "glassjames.github.io">
 
 <html>
   <head>
-    <title>james glass</title>
     <meta charset="UTF-8">
+    <title>James Glass | CompSci Guy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="fontstyle.css">
     <link rel="stylesheet" href="style.css">
 
     <link rel="stylesheet" href="https://use.typekit.net/mhg8rcw.css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -18,20 +20,29 @@
     <link rel="stylesheet" type="text/css" href="hover.css">
     <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
     <script type="text/javascript" src="jquery.fullPage.js"></script>
+    <script type="text/javascript" src="jquery.fullpage.extensions.min.js"></script>
+
     <script type="text/javascript" src="initial.js"></script>
   </head>
   <body>
+    <ul id="menu">
+    	<!--<li data-menuanchor="home" class="active"><a href="#home">home</a></li>
+    	<li data-menuanchor="about"><a href="#about">about</a></li>
+    	<li data-menuanchor="work"><a href="#work">work</a></li>
+    	<li data-menuanchor="resume"><a href="#resume">resume</a></li>
+      <li data-menuanchor="contact"><a href="#contact">contact</a></li>-->
+    </ul>
     <div id="fullpage">
       <div class="section">
         <h1 style="font-size: 0;">
           <div id="name-plate">
-            <h3 class="hvr-pop" style="color: #FFFFFF">j</h3>
+            <h3 class="hvr-pop" style="color: #FFFFFF">J</h3>
             <h3 class="hvr-pop" style="color: #FFFFFF">a</h3>
             <h3 class="hvr-pop" style="color: #FFFFFF">m</h3>
             <h3 class="hvr-pop" style="color: #FFFFFF">e</h3>
             <h3 class="hvr-pop" style="color: #FFFFFF">s</h3>
             <h3 class="hvr-pop" style="color: #FFFFFF">&nbsp</h3>
-            <h3 class="hvr-pop" style="color: #FFFFFF">g</h3>
+            <h3 class="hvr-pop" style="color: #FFFFFF">G</h3>
             <h3 class="hvr-pop" style="color: #FFFFFF">l</h3>
             <h3 class="hvr-pop" style="color: #FFFFFF">a</h3>
             <h3 class="hvr-pop" style="color: #FFFFFF">s</h3>
@@ -47,11 +58,11 @@
         </nav>
       </div>
       <div class="section">
-          <div class="about_h">
-            <h2 id="about-header">about</h1>
-          </div>
-          <img src="images/propic.png" class="propic" alt="Profile Picture">
-          <div class="info">
+        <div class="page-h">
+          <h2 id="about-header">about</h2>
+        </div>
+        <img src="images/propic.png" class="propic" alt="Profile Picture">
+        <div class="info">
           <p class="aboutme">
             <span style="color: #33C55A; font-size: 3vw; font-weight: 700">Hey, I'm James!</span>
             <br>
@@ -63,17 +74,41 @@
         </div>
       </div>
       <div class="section">
-        <div class="slide" data-anchor="slide1"><h2 id="work-header">work</h1></div>
-        <div class="slide" data-anchor="slide2"><h2 id="work-header">work</h1></div>
-        <div class="slide" data-anchor="slide3"><h2 id="work-header">work</h1></div>
-        <div class="slide" data-anchor="slide4"><h2 id="work-header">work</h1></div>
+        <div class="page-h">
+          <h2 id="work-header">work</h2>
+        </div>
+        <div class="info">
+          <p class="aboutme">
+            &nbsp &nbsp Here's a collection of my graphic design and programming projects.<br>
+            Use the switch to toggle what types of projects you're seeing!
+          </p>
+        </div>
+        <div class="owl-carousel owl-theme">
+            <div class="item"><p>1</p></div>
+            <div class="item"><p>2</p></div>
+            <div class="item"><p>3</p></div>
+            <div class="item"><p>4</p></div>
+            <div class="item"><p>5</p></div>
+            <div class="item"><p>6</p></div>
+            <div class="item"><p>7</p></div>
+            <div class="item"><p>8</p></div>
+            <div class="item"><p>9</p></div>
+            <div class="item"><p>10</p></div>
+            <div class="item"><p>11</p></div>
+            <div class="item"><p>12</p></div>
+        </div>
+        <label class="switch">
+          <input type="checkbox" class="check" onclick="toggleProjects()">
+          <span class="slider round"></span>
+        </label>
       </div>
       <div class="section">
-        <h2 id="resume-header">resume</h1>
+        <h2 id="resume-header">resume</h2>
       </div>
       <div class="section">
-        <h2 id="contact-header">contact</h1>
+        <h2 id="contact-header">contact</h2>
       </div>
     </div>
+    <script src="owlcarousel/owl.carousel.js"></script>
   </body>
 </html>

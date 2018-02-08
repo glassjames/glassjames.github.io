@@ -81,7 +81,7 @@ h2 {
   font-family: "niveau-grotesk" !important;
 }
 
-.about_h {
+.page-h {
   text-align: left;
   /*border-style: solid;
   border-color: green !important;
@@ -95,14 +95,17 @@ h2 {
 }
 
 #work-header {
+  margin-left: 50px;
   color: #1476E3;
 }
 
 #resume-header {
+  margin-left: 50px;
   color: #DD155D;
 }
 
 #contact-header {
+  margin-left: 50px;
   color: #F4D46C;
 }
 
@@ -117,11 +120,123 @@ h2 {
 .propic {
   height: 40vw;
   width: 40vw;
-  margin: 50px;
+  margin: 4vw;
   float: right !important;
 }
 
 .info {
   clear: left;
-  margin: 50px;
+  margin: 4vw;
+  margin-bottom: 2vw;
 }
+
+#fullPage {
+  table-layout: fixed;
+}
+
+#menu {
+  position: fixed;
+  display: block;
+  z-index: 9;
+}
+
+/*carousel*/
+.item {
+  text-align: center;
+
+  color: #1476E3;
+  font-family: "niveau-grotesk" !important;
+  font-weight: 700 !important;
+  background: white;
+  width: 17vw;
+  height: 17vw;
+  transition: .5s;
+}
+
+.item:hover {
+  transform: scale(1.1);
+}
+
+.item:hover + .item {
+    opacity: 0.3;
+}
+
+.owl-stage-outer {
+  padding: 1.7vw;
+}
+
+.owl-prev {
+  display: none !important;
+}
+
+.owl-next {
+  display: none !important;
+}
+
+.owl-dot.active span{
+  background-color: #1476E3 !important;
+}
+
+/*toggle switch*/
+.switch {
+ position: relative;
+ display: inline-block;
+ width: 120px;
+ height: 34px;
+ float: right;
+ margin: 4vw;
+ margin-top: 2vw;
+}
+
+.switch input {
+  display:none;
+}
+
+.slider {
+ position: absolute;
+ cursor: pointer;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background-color: #1476E3;
+ -webkit-transition: .4s;
+ transition: .4s;
+}
+
+.slider:before {
+ position: absolute;
+ content: "";
+ height: 26px;
+ width: 26px;
+ left: 4px;
+ bottom: 4px;
+ background-color: #1B1C22;
+ -webkit-transition: .4s;
+ transition: .4s;
+}
+
+input:checked + .slider {
+ background-color: #1476E3;
+}
+
+input:focus + .slider {
+ box-shadow: 0 0 1px #1476E3;
+}
+
+input:checked + .slider:before {
+ -webkit-transform: translateX(52px);
+ -ms-transform: translateX(52px);
+ transform: translateX(85px);
+}
+
+.slider.round {
+ border-radius: 34px;
+}
+
+.slider.round:before {
+ border-radius: 50%;
+}
+
+/*@media only screen and (max-device-width: 480px) {
+}*/
