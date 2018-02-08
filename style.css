@@ -151,14 +151,12 @@ h2 {
   width: 17vw;
   height: 17vw;
   transition: .5s;
+  border-radius: 5px;
 }
 
 .item:hover {
   transform: scale(1.1);
-}
-
-.item:hover + .item {
-    opacity: 0.3;
+  border-radius: 10px;
 }
 
 .owl-stage-outer {
