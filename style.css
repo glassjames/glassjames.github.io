@@ -64,9 +64,37 @@ a {
 #green-rule {
   border-style: solid;
   border-color: #33C55A;
-  border-width: 46px;
-  margin-left: 0px;
-  margin-right: 0px;
+  border-width: 1vw;
+  margin: 0px;
+  padding: 0px;
+  margin-top: -1.975vw;
+}
+
+#blue-rule {
+  border-style: solid;
+  border-color: #1476E3;
+  border-width: 1vw;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+#red-rule {
+  border-style: solid;
+  border-color: #DD155D;
+  border-width: 1vw;
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+#yellow-rule {
+  border-style: solid;
+  border-color: #F4D46C;
+  border-width: 1vw;
+  margin: 0px;
+  padding: 0px;
+  margin-top: -1.975vw;
 }
 
 h2 {
@@ -100,6 +128,7 @@ h2 {
 }
 
 #resume-header {
+  margin-top: -.5vw;
   margin-left: 50px;
   color: #DD155D;
 }
@@ -143,7 +172,6 @@ h2 {
 /*carousel*/
 .item {
   text-align: center;
-
   color: #1476E3;
   font-family: "niveau-grotesk" !important;
   font-weight: 700 !important;
@@ -151,16 +179,22 @@ h2 {
   width: 17vw;
   height: 17vw;
   transition: .5s;
-  border-radius: 5px;
+  border-radius: .5vw;
+  position: relative;
+  opacity: .95;
 }
 
 .item:hover {
   transform: scale(1.1);
-  border-radius: 10px;
+  border-radius: 1vw;
+  /*box-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.2), 0 4px 70px 0 rgba(0, 0, 0, 0.2);*/
+  z-index: 999 !important;
+  opacity: 1;
 }
 
 .owl-stage-outer {
   padding: 1.7vw;
+  overflow: visible;
 }
 
 .owl-prev {
@@ -236,5 +270,40 @@ input:checked + .slider:before {
  border-radius: 50%;
 }
 
-/*@media only screen and (max-device-width: 480px) {
-}*/
+.tidbits {
+  font-size: 3vw !important;
+}
+
+.category {
+  font-size: 2vw !important;
+  font-family: "niveau-grotesk" !important;
+  font-weight: 700 !important;
+  color: #DD155D;
+  text-decoration: underline;
+}
+
+.title {
+  font-size: 2vw !important;
+  font-family: "niveau-grotesk" !important;
+  font-weight: 700 !important;
+  color: #FFFFFF;
+}
+
+.description {
+  font-size: 1.5vw !important;
+  font-family: "niveau-grotesk" !important;
+  font-weight: 700 !important;
+  color: #AFAEAE;
+  margin-left: 2vw;
+}
+
+@media only screen and (max-width: 480px) {
+  .item {
+    width: 90vw;
+    height: 50vh;
+    border-radius: .5vw;
+    margin-right: 5vw;
+    margin-left: 3.2vw;
+    transform: scale(0.95);
+  }
+}

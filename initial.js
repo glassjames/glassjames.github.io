@@ -19,15 +19,17 @@ $(document).ready(function() {
 		},
     afterRender: function(){
       $('.owl-carousel').owlCarousel({
-        stagePadding: 75,
-        loop:true,
+        /*stagePadding: 75,*/
+        center: true,
+        loop: true,
+        nav: true,
         margin: 0,
-        nav:true,
-        responsive:{
+        responsiveClass: true,
+        responsive: {
             0:{
                 items:1
             },
-            600:{
+            480:{
                 items:3
             },
             1000:{
@@ -78,13 +80,14 @@ $(document).ready(function() {
         $(this).css("color", "#F4D46C");
   });
   $.fn.fullpage.reBuild();
+  $('input:checkbox').removeAttr('checked');
 });
 
 function toggleProjects() {
   if ($('.check').is(':checked')) {
-    $('.item').css('background-color','#FFFFFF');
+    $('.item').css('background-color','#1476E3');
   }
   else {
-    $('.item').css('background-color','#1476E3');
+    $('.item').css('background-color','#FFFFFF');
   }
 }
