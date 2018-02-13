@@ -19,6 +19,12 @@ p {
   position:relative;
 }
 
+.greeting {
+   color: #33C55A;
+   font-size: 3vw;
+   font-weight: 700;
+}
+
 #name-plate {
   text-align: center;
 }
@@ -85,7 +91,7 @@ a {
   border-width: 1vw;
   margin: 0px;
   padding: 0px;
-  
+
 }
 
 #yellow-rule {
@@ -184,13 +190,13 @@ h2 {
   opacity: .95;
 }
 
-.item:hover {
+/*.item:hover {
   transform: scale(1.1);
   border-radius: 1vw;
-  /*box-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.2), 0 4px 70px 0 rgba(0, 0, 0, 0.2);*/
+  box-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.2), 0 4px 70px 0 rgba(0, 0, 0, 0.2);
   z-index: 999 !important;
   opacity: 1;
-}
+}*/
 
 .owl-stage-outer {
   padding: 1.7vw;
@@ -298,12 +304,95 @@ input:checked + .slider:before {
 }
 
 @media only screen and (max-width: 480px) {
+  .propic {
+    height: 50vw;
+    width: 50vw;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    margin-top: 0vw;
+  }
+
   .item {
     width: 90vw;
     height: 50vh;
     border-radius: .5vw;
     margin-right: 5vw;
     margin-left: 3.2vw;
-    transform: scale(0.95);
+    /*transform: scale(0.95);*/
+  }
+
+  .hvr-grow-shadow:hover {
+    -webkit-transform: scale(1.0) !important;
+    transform: scale(1.0) !important;
+  }
+
+  h2 {
+    font-size: 24vw !important;
+  }
+
+  #about-header {
+    margin-left: 0px;
+  }
+
+  #work-header {
+    margin-left: 0px;
+  }
+
+  #resume-header {
+    margin-left: 0px;
+  }
+
+  #contact-header {
+    margin-left: 0px;
+  }
+
+  .page-h {
+    text-align: center;
+    width: 75vw;
+    margin-left: 12.5vw;
+    margin-right: 12.5vw;
+  }
+
+  .greeting {
+     font-size: 5vw;
+  }
+
+  p {
+    font-size: 5vw;
+  }
+
+  .mobile-hide {
+    font-size: 0px;
+  }
+
+  .tidbits {
+    font-size: 7vw !important;
+  }
+
+  .category {
+    font-size: 5vw !important;
+    font-family: "niveau-grotesk" !important;
+    font-weight: 700 !important;
+    color: #DD155D;
+    text-decoration: underline;
+  }
+
+  .title {
+    font-size: 4vw !important;
+    font-family: "niveau-grotesk" !important;
+    font-weight: 700 !important;
+    color: #FFFFFF;
+  }
+
+  .description {
+    font-size: 3.5vw !important;
+    font-family: "niveau-grotesk" !important;
+    font-weight: 700 !important;
+    color: #AFAEAE;
+    margin-left: 2vw;
+  }
+
+  .resume-list {
+    margin-left: -6vw !important;
   }
 }
