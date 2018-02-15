@@ -4,19 +4,7 @@ $(document).ready(function() {
     menu: '#menu',
     scrollBar:true,
     css3: true,
-		slidesNavigation: true,
-		slidesToSections: true,
-		responsiveWidth: 900,
-		responsiveSlides: true,
-		responsiveSlidesKey: 'YWx2YXJvdHJpZ28uY29tX3RoVWNtVnpjRzl1YzJsMlpWTnNhV1JsY3c9PUVZdg==',
-		afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){
-			console.log("slideLoad--" + "anchorLink: " + anchorLink + " index: " + index + " slideAnchor: " + slideAnchor + " slideIndex: " + slideIndex);
-
-		},
-		onSlideLeave: function(anchorLink, index, slideIndex, direction){
-			console.log("----------------");
-			console.log("onSlideLeave--" + "anchorLink: " + anchorLink + " index: " + index + " slideIndex: " + slideIndex + " direction: " + direction);
-		},
+		autoScrolling: true,
     afterRender: function(){
       $('.owl-carousel').owlCarousel({
         /*stagePadding: 75,*/
@@ -30,7 +18,7 @@ $(document).ready(function() {
                 items:1
             },
             480:{
-                items:3
+                items:1
             },
             1000:{
                 items:5
@@ -80,8 +68,19 @@ $(document).ready(function() {
         $(this).css("color", "#F4D46C");
   });
   $.fn.fullpage.reBuild();
+  $( window ).on( "orientationchange", function( event ) {
+    if (window.matchMedia("(orientation: portrait)").matches) {
+      //alert("Device is in portrait mode")
+      $.fn.fullpage.setAutoScrolling(true);
+    }
+    if (window.matchMedia("(orientation: landscape)").matches) {
+      //alert("Device is in landscape mode")
+      $.fn.fullpage.setAutoScrolling(false);
+    }
+  });
   $('input:checkbox').removeAttr('checked');
 });
+
 
 function toggleProjects() {
   if ($('.check').is(':checked')) {

@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="owlcarousel/owl.carousel.css">
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -80,7 +82,7 @@
           <h2 id="work-header">work</h2>
         </div>
         <div class="info">
-          <p class="aboutme mobile-hide">
+          <p class="aboutme mobile-hide tablet-hide">
             Here's a collection of my graphic design and programming projects. <br>
             Use the switch to toggle what types of projects you're seeing!
           </p>
@@ -99,9 +101,12 @@
             <div class="item hvr-grow-shadow hvr-rectangle-out"><p>11</p></div>
             <div class="item hvr-grow-shadow hvr-rectangle-out"><p>12</p></div>
         </div>
+
         <label class="switch">
+          <!--<a href="#" class="fa fa-paint-brush"></a>-->
           <input type="checkbox" class="check" onclick="toggleProjects()">
           <span class="slider round"></span>
+          <!--<a href="#" class="fa fa-code"></a>-->
         </label>
       </div>
       <div class="section">
@@ -133,9 +138,22 @@
           </p>
         </div>
       </div>
-      <div class="section fp-auto-height">
+      <div class="section fp-auto-height" style="background-color: #1B1C22">
         <!--<div id="yellow-rule"></div>-->
-        <h2 id="contact-header">contact</h2>
+        <div class="page-h">
+          <h2 id="contact-header">contact</h2>
+        </div>
+        <br>
+        <div class="link-container">
+          <nav class="links">
+            <a href="mailto:james.glass14@gmail.com" class="fa fa-at hvr-bob"></a>
+            <a href="https://www.github.com/glassjames" class="fa fa-github hvr-bob"></a>
+            <a href="https://www.linkedin.com/in/jamesaglass" class="fa fa-linkedin hvr-bob"></a>
+            <a href="https://www.dribbble.com/glass_AFK" class="fa fa-dribbble hvr-bob"></a>
+            <a href="#" class="fa fa-facebook hvr-bob"></a>
+            <a href="https://www.twitter.com/glass_AFK" class="fa fa-twitter hvr-bob"></a>
+          </nav>
+        </div>
       </div>
     </div>
     <script src="owlcarousel/owl.carousel.js"></script>
