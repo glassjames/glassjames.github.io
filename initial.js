@@ -79,6 +79,11 @@ $(document).ready(function() {
     }
   });
   $('input:checkbox').removeAttr('checked');
+  $(".item").hover(function(){
+        $(this).css("background-color", "#1476E3");
+        }, function(){
+        $(this).css("background-color", "#FFFFFF");
+  });
 });
 
 

@@ -192,6 +192,11 @@ h2 {
   opacity: .95;
 }
 
+.owl-carousel .owl-stage {
+  display: flex !important;
+  align-items: center !important;
+}
+
 /*.item:hover {
   transform: scale(1.1);
   border-radius: 1vw;
@@ -338,6 +343,10 @@ input:checked + .slider:before {
     margin-top: 0vw;
   }
 
+  .aboutme {
+    font-size: 4vw;
+  }
+
   .item {
     width: 90vw;
     height: 50vh;
@@ -412,7 +421,7 @@ input:checked + .slider:before {
   }
 
   .description {
-    font-size: 3.5vw;
+    font-size: 3.5vw !important;
     font-family: "niveau-grotesk" !important;
     font-weight: 700 !important;
     color: #AFAEAE;
@@ -442,8 +451,8 @@ input:checked + .slider:before {
   }
 
   .link-container {
-    width: 100vw;
-    height: 75vw;
+    /*width: 100vw;
+    height: 75vw;*/
   }
 }
 
@@ -509,7 +518,7 @@ input:checked + .slider:before {
   }
 
   .category {
-    font-size: 3vw !important;
+    font-size: 3vw;
     font-family: "niveau-grotesk" !important;
     font-weight: 700 !important;
     color: #DD155D;
@@ -517,7 +526,7 @@ input:checked + .slider:before {
   }
 
   .title {
-    font-size: 2vw !important;
+    font-size: 2vw;
     font-family: "niveau-grotesk" !important;
     font-weight: 700 !important;
     color: #FFFFFF;
