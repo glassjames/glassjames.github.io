@@ -61,13 +61,14 @@
   align-content: flex-end;
   align-items: flex-end;
 
-  width: 100%;
+  max-width: 700px;
   height: 100%;
 }
 
 .hero-img {
   padding: 50px 0 0 0;
-  max-width: 700px;
+  max-width: 100%;
+  width:100%;
 }
 
 .rule {
