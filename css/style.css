@@ -126,12 +126,12 @@
 }
 
 .input {
-  font-family: Monaco;
+  font-family: Monaco, monospace;
   color: #ffffff;
 }
 
 .output {
-  font-family: Monaco;
+  font-family: Monaco, monospace;
   color: #cff;
 }
 
