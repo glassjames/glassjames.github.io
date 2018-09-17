@@ -1,3 +1,7 @@
+a {
+  transition: all .2s ease-in-out;
+}
+
 .row {
   width: 100%;
   margin: 0 !important;
@@ -171,4 +175,52 @@
 
 .card-footer {
   border: none !important;
+}
+
+.footer {
+  position: relative;
+  padding: 15px;
+  background: #2C2B2A;
+}
+
+ul {
+  list-style-type: none;
+
+  margin: 0 !important;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+li {
+  float: left;
+  padding: 15px;
+}
+
+.social-link {
+  color: #66625e;
+}
+
+.social-link:visited {
+  color: #66625e;
+}
+
+.social-link:hover {
+  color: #F16276;
+  cursor: pointer;
+}
+
+.social-link:active {
+  color: #F16276;
+}
+
+i {
+  font-size: 25px;
+}
+
+.copyright {
+  text-align: center;
+  color: #66625e;
 }
