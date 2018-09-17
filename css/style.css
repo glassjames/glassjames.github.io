@@ -17,11 +17,17 @@
 }
 
 .name-bar {
-  padding: 5px;
+  padding: 40px 30px !important;
 
-  text-align: center;
-  background: #ffffff;
-  /*background: #F16276;*/
+  /*text-align: center;
+  background: #ffffff;*/
+  text-align: right;
+  background: #F16276;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 .name {
@@ -36,6 +42,15 @@
   /*margin-bottom: 0 !important*/
 }
 
+.hero-text-1 {
+  margin: 0;
+}
+
+.hero-text-2 {
+  font-size: 70px;
+  font-weight: 700;
+}
+
 .hero {
   background-color: #F16276;
 }
@@ -45,10 +60,14 @@
   justify-content: center;
   align-content: flex-end;
   align-items: flex-end;
+
+  width: 100%;
+  height: 100%;
 }
 
 .hero-img {
   padding: 50px 0 0 0;
+  max-width: 700px;
 }
 
 .rule {
@@ -136,7 +155,7 @@
 
 .projects {
   padding: 50px;
-  background: #76777A;
+  background: #cecece;
 }
 
 .card {
