@@ -2,6 +2,11 @@ a {
   transition: all .2s ease-in-out;
 }
 
+.lander {
+  justify-content: center;
+  background: #F16276;
+}
+
 .row {
   width: 100%;
   margin: 0 !important;
@@ -21,11 +26,12 @@ a {
 }
 
 .name-bar {
-  padding: 40px 30px !important;
+  padding: 80px 30px 0 !important;
+  /*padding: 40px 30px !important;*/
 
   /*text-align: center;
   background: #ffffff;*/
-  text-align: right;
+  text-align: left;
   background: #F16276;
 
   display: flex;
@@ -56,6 +62,7 @@ a {
 }
 
 .hero {
+  padding: 0 30px;
   background-color: #F16276;
 }
 
