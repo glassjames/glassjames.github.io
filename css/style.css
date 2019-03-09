@@ -150,6 +150,10 @@ a {
   padding-left: 20px;
 }
 
+.mb {
+  margin-bottom: 1rem;
+}
+
 .terminal-link {
   color: #fcf;
 }
